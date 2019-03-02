@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+.qmake.stash
+Makefile
+Makefile.*
+*.pro.user
+release/
+ui_game_dialog.h
+carnaval_tic_tac_toe_plugin_import.cpp

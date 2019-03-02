@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>game_dialog</class>
+ <widget class="QDialog" name="game_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>147</width>
+    <height>336</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>147</width>
+    <height>336</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>147</width>
+    <height>336</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>game_dialog</string>
+  </property>
+  <widget class="QLabel" name="beer_tl">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>39</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="beer_tm">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>9</y>
+     <width>39</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="beer_ml">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>117</y>
+     <width>39</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="beer_tr">
+   <property name="geometry">
+    <rect>
+     <x>99</x>
+     <y>9</y>
+     <width>39</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="beer_mm">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>117</y>
+     <width>39</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="beer_bl">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>225</y>
+     <width>39</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="beer_bm">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>225</y>
+     <width>39</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="beer_mr">
+   <property name="geometry">
+    <rect>
+     <x>99</x>
+     <y>117</y>
+     <width>39</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="beer_br">
+   <property name="geometry">
+    <rect>
+     <x>99</x>
+     <y>225</y>
+     <width>39</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="carnaval_tic_tac_toe.qrc"/>
+ </resources>
+ <connections/>
+</ui>
