@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>game_dialog</string>
+   <string>Carnal GTic-Tac-Toe</string>
   </property>
   <widget class="QLabel" name="beer_tl">
    <property name="geometry">
@@ -105,10 +105,10 @@
     <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="beer_bl">
+  <widget class="QLabel" name="beer_bm">
    <property name="geometry">
     <rect>
-     <x>9</x>
+     <x>54</x>
      <y>225</y>
      <width>39</width>
      <height>102</height>
@@ -121,10 +121,10 @@
     <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="beer_bm">
+  <widget class="QLabel" name="beer_br">
    <property name="geometry">
     <rect>
-     <x>54</x>
+     <x>99</x>
      <y>225</y>
      <width>39</width>
      <height>102</height>
@@ -153,10 +153,10 @@
     <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="beer_br">
+  <widget class="QLabel" name="beer_bl">
    <property name="geometry">
     <rect>
-     <x>99</x>
+     <x>9</x>
      <y>225</y>
      <width>39</width>
      <height>102</height>
@@ -167,6 +167,70 @@
    </property>
    <property name="pixmap">
     <pixmap resource="carnaval_tic_tac_toe.qrc">:/beer.png</pixmap>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>106</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>214</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>41</x>
+     <y>3</y>
+     <width>20</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>86</x>
+     <y>3</y>
+     <width>20</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
    </property>
   </widget>
  </widget>
