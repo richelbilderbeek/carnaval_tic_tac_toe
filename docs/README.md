@@ -4,8 +4,8 @@ Carnaval game of tic-tac-toe.
 
 ![Screenshot](carnaval_tic_tac_toe.png)
 
-- Windows executable: [here](http://richelbilderbeek.nl/carnaval_tic_tac_toe.exe)
-- Videos: [YouTube](https://youtu.be/wOc8YE24DHw) [(.ogv)](http://richelbilderbeek.nl/carnaval_tic_tac_toe.ogv)
+- [Windows executable](http://richelbilderbeek.nl/carnaval_tic_tac_toe.exe)
+- [YouTube video](https://youtu.be/wOc8YE24DHw)
 
 ## Building
 
@@ -29,4 +29,8 @@ For example, put them in a folder on a website, then embed the game:
 
 ## Actually playing it
 
+<!-- markdownlint-disable MD033 --><!-- Need HTML here -->
+
 <iframe src="carnaval_tic_tac_toe/carnaval_tic_tac_toe.html" width="400" height="500"></iframe>
+
+<!-- markdownlint-enable MD033 -->
