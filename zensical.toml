@@ -5,7 +5,10 @@ repo_url = "https://github.com/richelbilderbeek/carnaval_tic_tac_toe"
 edit_uri = "blob/main/docs/"
 
 nav = [
-  { "Start" = "README.md"}
+  { "Start" = "README.md"},
+  "build.md",
+  "manual.md",
+  "play.md"
 ]
 
 [project.theme]
