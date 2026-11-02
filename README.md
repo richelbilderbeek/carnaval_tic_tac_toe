@@ -2,7 +2,8 @@
 
 - [Go to the nicely rendered website](https://richelbilderbeek.github.io/carnaval_tic_tac_toe/).
 
-The game can be found in the folder `docs/game`.
+The game is built by continuous integration into the folder `docs/game`,
+which is not part of this repository.
 
 ## Files used by continuous integration scripts
 
