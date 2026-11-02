@@ -1,28 +1,19 @@
-# carnaval_tic_tac_toe
+# Carnaval Tic Tac Toe
 
-Carnaval game of tic-tac-toe.
+- [Go to the nicely rendered website](https://richelbilderbeek.github.io/carnaval_tic_tac_toe/).
 
-![](carnaval_tic_tac_toe.png)
+The game can be found in the folder `docs/game`.
 
- * Windows executable: [here](http://richelbilderbeek.nl/carnaval_tic_tac_toe.exe)
- * Videos: [YouTube](https://youtu.be/wOc8YE24DHw) [(.ogv)](http://richelbilderbeek.nl/carnaval_tic_tac_toe.ogv)
+## Files used by continuous integration scripts
 
-## Building
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 
-Requires Qt 6.
+Filename                                  |Descriptions
+------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------
+[mlc_config.json](mlc_config.json)        |Configuration of the link checker, use `markdown-link-check --config mlc_config.json --quiet docs/**/*.md` to do link checking locally
+[.spellcheck.yml](.spellcheck.yml)        |Configuration of the spell checker, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
+[.wordlist.txt](.wordlist.txt)            |Whitelisted words for the spell checker, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
+[.markdownlint.jsonc](.markdownlint.jsonc)|Configuration of the markdown linter, use `markdownlint "**/*.md"` to do markdown linting locally. The name of this file is a default name.
+[.markdownlintignore](.markdownlintignore)|Files ignored by the markdown linter, use `markdownlint "**/*.md"` to do markdown linting locally. The name of this file is a default name.
 
- * Desktop: run `qmake6` and `make`
- * WebAssembly: use the `qmake` from a single-threaded Qt for WebAssembly
-   installation, with the matching [Emscripten](https://doc.qt.io/qt-6/wasm.html) version
-
-[GitHub Actions](.github/workflows/build.yml) builds the Linux, Windows and
-WebAssembly versions and stores them as artifacts of each workflow run.
-
-## Playing on a website
-
-The WebAssembly artifact is a set of static files, which any web host can serve.
-For example, put them in a folder on a website, then embed the game:
-
-```html
-<iframe src="carnaval_tic_tac_toe/carnaval_tic_tac_toe.html" width="400" height="500"></iframe>
-```
+<!-- markdownlint-enable MD013 -->
