@@ -24,13 +24,13 @@ The WebAssembly artifact is a set of static files, which any web host can serve.
 For example, put them in a folder on a website, then embed the game:
 
 ```html
-<iframe src="game/carnaval_tic_tac_toe.html" width="400" height="500"></iframe>
+<iframe src="game/carnaval_tic_tac_toe.html" width="155" height="366" scrolling="no" style="border: 0"></iframe>
 ```
 
 ## Actually playing it
 
 <!-- markdownlint-disable MD033 --><!-- Need HTML here -->
 
-<iframe src="game/carnaval_tic_tac_toe.html" width="400" height="500"></iframe>
+<iframe src="game/carnaval_tic_tac_toe.html" width="155" height="366" scrolling="no" style="border: 0"></iframe>
 
 <!-- markdownlint-enable MD033 -->
