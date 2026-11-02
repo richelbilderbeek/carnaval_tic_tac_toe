@@ -1,0 +1,90 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  QT_VERSION: 6.11.3
+  # Must match the Qt version, see https://doc.qt.io/qt-6/wasm.html
+  EMSCRIPTEN_VERSION: 4.0.7
+
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Qt
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qt6-base-dev libgl1-mesa-dev
+      - name: Build
+        run: |
+          mkdir build
+          cd build
+          qmake6 ..
+          make -j4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: carnaval_tic_tac_toe-linux
+          path: build/carnaval_tic_tac_toe
+
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ilammy/msvc-dev-cmd@v1
+      - uses: jurplel/install-qt-action@v4
+        with:
+          version: ${{ env.QT_VERSION }}
+          arch: win64_msvc2022_64
+          cache: true
+      - name: Build
+        shell: cmd
+        run: |
+          mkdir build
+          cd build
+          qmake ..
+          nmake release
+      - name: Bundle Qt libraries
+        run: |
+          mkdir dist
+          copy build\release\carnaval_tic_tac_toe.exe dist
+          windeployqt --release --no-translations dist\carnaval_tic_tac_toe.exe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: carnaval_tic_tac_toe-windows
+          path: dist
+
+  webassembly:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Qt
+        # WebAssembly Qt also needs a desktop Qt for its host tools
+        run: |
+          pip install aqtinstall
+          aqt install-qt linux desktop "$QT_VERSION" linux_gcc_64 -O "$HOME/qt"
+          aqt install-qt all_os wasm "$QT_VERSION" wasm_singlethread -O "$HOME/qt"
+      - uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: ${{ env.EMSCRIPTEN_VERSION }}
+      - name: Build
+        run: |
+          mkdir build
+          cd build
+          "$HOME/qt/$QT_VERSION/wasm_singlethread/bin/qmake" ..
+          make -j4
+      - name: Collect web files
+        run: |
+          mkdir dist
+          cp build/*.html build/*.js build/*.wasm dist/
+          cp build/*.svg dist/ || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: carnaval_tic_tac_toe-webassembly
+          path: dist
