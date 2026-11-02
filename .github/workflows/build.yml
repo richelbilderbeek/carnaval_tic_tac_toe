@@ -12,6 +12,8 @@ env:
   QT_VERSION: 6.11.3
   # Must match the Qt version, see https://doc.qt.io/qt-6/wasm.html
   EMSCRIPTEN_VERSION: 4.0.7
+  # aqtinstall cannot find Qt 6.11.3 for Windows
+  WINDOWS_QT_VERSION: 6.8.3
 
 jobs:
   linux:
@@ -40,7 +42,7 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1
       - uses: jurplel/install-qt-action@v4
         with:
-          version: ${{ env.QT_VERSION }}
+          version: ${{ env.WINDOWS_QT_VERSION }}
           arch: win64_msvc2022_64
           cache: true
       - name: Build
