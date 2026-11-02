@@ -26,13 +26,14 @@ game_dialog::~game_dialog()
 
 void game_dialog::mousePressEvent(QMouseEvent *event)
 {
-  if (event->x() < this->width() / 3)
+  const QPointF click = event->position();
+  if (click.x() < this->width() / 3)
   {
-    if (event->y() < this->height() / 3)
+    if (click.y() < this->height() / 3)
     {
       ui->beer_tl->setVisible(true);
     }
-    else if (event->y() < 2 * this->height() / 3)
+    else if (click.y() < 2 * this->height() / 3)
     {
       ui->beer_ml->setVisible(true);
     }
@@ -41,13 +42,13 @@ void game_dialog::mousePressEvent(QMouseEvent *event)
       ui->beer_bl->setVisible(true);
     }
   }
-  else if (event->x() < 2 * this->width() / 3)
+  else if (click.x() < 2 * this->width() / 3)
   {
-    if (event->y() < this->height() / 3)
+    if (click.y() < this->height() / 3)
     {
       ui->beer_tm->setVisible(true);
     }
-    else if (event->y() < 2 * this->height() / 3)
+    else if (click.y() < 2 * this->height() / 3)
     {
       ui->beer_mm->setVisible(true);
     }
@@ -58,11 +59,11 @@ void game_dialog::mousePressEvent(QMouseEvent *event)
   }
   else
   {
-    if (event->y() < this->height() / 3)
+    if (click.y() < this->height() / 3)
     {
       ui->beer_tr->setVisible(true);
     }
-    else if (event->y() < 2 * this->height() / 3)
+    else if (click.y() < 2 * this->height() / 3)
     {
       ui->beer_mr->setVisible(true);
     }
