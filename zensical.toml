@@ -13,8 +13,8 @@ nav = [
 variant = "classic"
 palette.primary = "orange"
 
-favicon = "r_written.svg"
-logo = "r_written.svg"
+favicon = "beer.png"
+logo = "beer.png"
 
 # https://zensical.org/docs/setup/language/
 language = "en"
