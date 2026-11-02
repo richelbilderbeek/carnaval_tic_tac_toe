@@ -9,14 +9,15 @@ URL = "http://localhost:8000/carnaval_tic_tac_toe.html"
 
 with sync_playwright() as p:
     browser = p.chromium.launch(channel="chrome")
-    page = browser.new_page(viewport={"width": 400, "height": 500})
+    # The same size as the iframe on the website
+    page = browser.new_page(viewport={"width": 155, "height": 366})
     errors = []
     page.on("pageerror", lambda e: errors.append(str(e)))
     page.goto(URL)
     time.sleep(10)
     before = page.screenshot()
-    for x in range(30, 400, 40):
-        for y in range(30, 500, 40):
+    for x in range(20, 155, 40):
+        for y in range(50, 366, 40):
             page.mouse.click(x, y)
     time.sleep(1)
     after = page.screenshot()
