@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Carnal GTic-Tac-Toe</string>
+   <string>Carnaval Tic-Tac-Toe</string>
   </property>
   <widget class="QLabel" name="beer_tl">
    <property name="geometry">
