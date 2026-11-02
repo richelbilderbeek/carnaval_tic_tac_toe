@@ -16,7 +16,7 @@ After placing a symbol, it is the other player's turn.
 
 ## Questions
 
-### The symbol for player 1 and player 2 is identical!
+### The symbol for player 1 and player 2 is identical
 
 This is correct.
 
@@ -26,7 +26,7 @@ Having two different symbols makes the game too serious.
 
 Instead, have a beer and enjoy being in the same team as the other player.
 
-### The game does not detect 3 in a row!
+### The game does not detect 3 in a row
 
 This is correct.
 
