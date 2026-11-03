@@ -35,3 +35,9 @@ FORMS += \
 
 RESOURCES += \
     carnaval_tic_tac_toe.qrc
+
+# Music is for the desktop version only: the web version is silent
+!wasm {
+    QT += multimedia
+    RESOURCES += carnaval_tic_tac_toe_music.qrc
+}

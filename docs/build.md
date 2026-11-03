@@ -2,7 +2,8 @@
 
 Requires Qt 6.
 
-- Desktop: run `qmake6` and `make`
+- Desktop: requires Qt Multimedia, for the music.
+  Run `qmake6` and `make`
 - WebAssembly: use the `qmake` from a single-threaded Qt for WebAssembly
   installation, with the matching
   [Emscripten](https://doc.qt.io/qt-6/wasm.html) version
