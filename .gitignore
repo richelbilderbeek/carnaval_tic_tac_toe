@@ -39,3 +39,4 @@ ui_game_dialog.h
 carnaval_tic_tac_toe_plugin_import.cpp
 site/
 docs/game/
+build/
