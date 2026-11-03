@@ -20,18 +20,14 @@ After placing a symbol, it is the other player's turn.
 
 This is correct.
 
-This is to make sure the game is fun.
-
-Having two different symbols makes the game too serious.
-
-Instead, have a beer and enjoy being in the same team as the other player.
+This is to make sure the game is **realistic**:
+during carnaval you will also have to remember which beer
+is yours.
 
 ### The game does not detect 3 in a row
 
 This is correct.
 
-This is to make sure the game is fun.
-
-Having an emotionless computer decide would make the game too serious.
-
-Instead, have a beer and enjoy to agree that playing is winning.
+This is to make sure the game is **fun**:
+you will have to decide who won or
+decide that it is a draw.
