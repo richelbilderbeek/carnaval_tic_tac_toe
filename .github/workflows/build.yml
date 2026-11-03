@@ -23,7 +23,7 @@ jobs:
       - name: Install Qt
         run: |
           sudo apt-get update
-          sudo apt-get install -y qt6-base-dev libgl1-mesa-dev
+          sudo apt-get install -y qt6-base-dev qt6-multimedia-dev libgl1-mesa-dev
       - name: Build
         run: |
           mkdir build
@@ -44,6 +44,7 @@ jobs:
         with:
           version: ${{ env.WINDOWS_QT_VERSION }}
           arch: win64_msvc2022_64
+          modules: qtmultimedia
           cache: true
       - name: Build
         shell: cmd

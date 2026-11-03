@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>carnaval_tic_tac_toe.ogg</file>
+    </qresource>
+</RCC>
