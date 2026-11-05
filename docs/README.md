@@ -1,6 +1,8 @@
 # Carnaval Tic-Tac-Toe
 
-Carnaval game of tic-tac-toe.
+Carnaval Tic-Tac-Toe is a carnaval-friendly version of tic-tac-toe
+and one of
+[Richèl Bilderbeek's games](https://richelbilderbeek.github.io/games).
 
 ![Screenshot](carnaval_tic_tac_toe.png)
 
