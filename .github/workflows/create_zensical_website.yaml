@@ -53,7 +53,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          "$HOME/qt/$QT_VERSION/wasm_singlethread/bin/qmake" ..
+          "$HOME/qt/$QT_VERSION/wasm_singlethread/bin/qmake" ../carnaval_tic_tac_toe.pro
           make -j4
       - name: Add the game to the website
         run: |

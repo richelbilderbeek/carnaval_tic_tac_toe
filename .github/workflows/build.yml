@@ -28,7 +28,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          qmake6 ..
+          qmake6 ../carnaval_tic_tac_toe.pro
           make -j4
       - uses: actions/upload-artifact@v4
         with:
@@ -51,7 +51,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          qmake ..
+          qmake ../carnaval_tic_tac_toe.pro
           nmake release
       - name: Bundle Qt libraries
         run: |
@@ -80,7 +80,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          "$HOME/qt/$QT_VERSION/wasm_singlethread/bin/qmake" ..
+          "$HOME/qt/$QT_VERSION/wasm_singlethread/bin/qmake" ../carnaval_tic_tac_toe.pro
           make -j4
       - name: Collect web files
         run: |
