@@ -1,5 +1,7 @@
 # Carnaval Tic Tac Toe
 
+[![codecov](https://codecov.io/gh/richelbilderbeek/carnaval_tic_tac_toe/branch/main/graph/badge.svg)](https://codecov.io/gh/richelbilderbeek/carnaval_tic_tac_toe)
+
 - [Go to the nicely rendered website](https://richelbilderbeek.github.io/carnaval_tic_tac_toe/).
 
 The game is built by continuous integration into the folder `docs/game`,

@@ -48,6 +48,7 @@ Uppsala
 WebAssembly
 Yadav
 carnaval
+codecov
 config
 dropin
 formalisms
