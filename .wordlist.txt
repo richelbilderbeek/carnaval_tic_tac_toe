@@ -47,6 +47,7 @@ UU
 Uppsala
 WebAssembly
 Yadav
+Zensical
 carnaval
 codecov
 config
